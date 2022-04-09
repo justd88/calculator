@@ -11,6 +11,6 @@ class CalculatorController extends AbstractController
     #[Route('/calculator', name: 'app_calculator', methods: ['GET', 'HEAD'])]
     public function index(): Response
     {
-        return $this->render('calculator.html.twig');
+        return $this->render('base.html.twig');
     }
 }

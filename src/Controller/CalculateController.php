@@ -25,6 +25,6 @@ class CalculateController extends AbstractController
     )]
     public function calculate(float $first, float $second, string $operand): Response
     {
-        return $$this->responseFactory->create($first, $second, $operand);
+        return $this->responseFactory->create($first, $second, $operand);
     }
 }
