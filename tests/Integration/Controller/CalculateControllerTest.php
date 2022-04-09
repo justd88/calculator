@@ -20,12 +20,11 @@ class CalculateControllerTest extends KernelTestCase
      * @dataProvider operationsDataProvider
      */
     public function testOperations(
-        float  $firstNumber,
-        float  $secondNumber,
+        float $firstNumber,
+        float $secondNumber,
         string $operand,
-        array  $expected
-    ): void
-    {
+        array $expected
+    ): void {
         $result = $this->calculateController->calculate($firstNumber, $secondNumber, $operand);
         $this->assertSame(json_encode($expected), $result->getContent());
     }

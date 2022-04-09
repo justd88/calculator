@@ -32,6 +32,6 @@ class CalculateControllerTest extends TestCase
             ->with(1, 2, 'operand')
             ->willReturn($expected);
 
-        $this->assertSame($expected, $this->controller->calculate(1,2,'operand'));
+        $this->assertSame($expected, $this->controller->calculate(1, 2, 'operand'));
     }
 }

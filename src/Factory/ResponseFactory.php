@@ -8,9 +8,8 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 class ResponseFactory
 {
     public function __construct(
-        private CalculatorInterface  $calculator,
-    )
-    {
+        private CalculatorInterface $calculator,
+    ) {
     }
 
     public function create(float $firstNumber, float $secondNumber, string $operand): JsonResponse
