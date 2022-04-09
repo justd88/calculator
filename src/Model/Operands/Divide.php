@@ -2,7 +2,7 @@
 
 namespace App\Model\Operands;
 
-use App\Exceptions\IllegalOperation;
+use App\Exception\IllegalOperation;
 use App\Model\OperationInterface;
 
 class Divide implements OperationInterface

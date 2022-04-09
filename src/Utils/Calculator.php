@@ -2,7 +2,7 @@
 
 namespace App\Utils;
 
-use App\Exceptions\OperandHandlerNotFound;
+use App\Exception\OperandHandlerNotFound;
 use App\Model\OperationInterface;
 
 class Calculator implements CalculatorInterface
