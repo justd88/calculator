@@ -21,7 +21,7 @@ const App = () => {
         setErrorMsg("");
         setIsLoading(true);
         fetch(
-            `http://localhost:8080/calculate/${firstNumber}/${operand}/${displayValue}`
+            `http://127.0.0.1:8000/calculate/${firstNumber}/${operand}/${displayValue}`
         )
             .then((res) => res.json())
             .then(
